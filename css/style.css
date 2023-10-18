@@ -1,0 +1,77 @@
+*,
+*::after,
+*::before {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'DM Sans', sans-serif;
+    background: #191919;
+    color: #fff;
+}
+
+.container {
+    max-width: 1200px;
+    padding: 20px 50px 0;
+}
+
+.header__wrapper {
+    margin-bottom: 35px;
+}
+
+.header__top {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header__top h1 {
+    font-size: 42px;
+}
+
+.header__top h2 {
+    font-size: 40px;
+    padding-bottom: 5px;
+}
+
+.button__menu {
+    margin-bottom: 30px;
+}
+
+.button__menu ul {
+    display: flex;
+    gap: 40px;
+}
+
+.button__menu button {
+    width: 200px;
+    background-color: #f2efe9;
+    color: #191919;
+    border-radius: 5px;
+    font-size: 15px;
+    position: relative;
+}
+
+.button__menu--item::before {
+    content: '';
+    top: 0;
+    left: 0;
+    width: 20px;
+    height: 20px;
+    position: absolute;
+    background-repeat: no-repeat;
+}
+
+.button__item--heart::before {
+    background-image: url('../img/heart.svg');
+}
+
+.button__item--grid::before {
+    background-image: url('../img/columns.svg');
+}
+
+.button__item--note::before {
+    background-image: url('../img/sticky.svg');
+}
